@@ -8,4 +8,6 @@ public interface Application {
 
 	boolean isFinish();
 
+	void begin();
+
 }

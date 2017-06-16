@@ -9,14 +9,15 @@ public class ConsoleRunner implements Runner {
 	@Override
 	public void start() {
 		if (this.application != null) {
+			this.application.begin();
 			Scanner scan = new Scanner(System.in);
 			String entre;
-			do {
-				System.out.print(this.application.getScreen());
+			System.out.print(this.application.getScreen());
+			while (!this.application.isFinish()) {
 				entre = scan.nextLine();
 				this.application.newInput(entre);
-			} while (!this.application.isFinish());
-			System.out.print(this.application.getScreen());
+				System.out.print(this.application.getScreen());
+			} 
 		}
 	}
 

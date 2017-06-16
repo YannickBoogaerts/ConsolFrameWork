@@ -13,6 +13,16 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+  <repositories>
+    <repository>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>Java2017</id>
+      <name>Stagiaires java 2017</name>
+      <url>https://maven.steformations.be/repositories/stagiaires/java/2017</url>
+    </repository>
+  </repositories>
 
   <dependencies>
     <dependency>
